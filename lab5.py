@@ -31,11 +31,11 @@ class Time:
     def timeOfDay(self):
         if (self.hours < 6) or (22 < self.hours <= 24):
             return "nighttime"
-        elif (self.hours <= 11):
+        elif self.hours <= 11:
             return "morning"
-        elif (self.hours <= 16):
+        elif self.hours <= 16:
             return "afternoon"
-        elif (self.hours <= 21):
+        elif self.hours <= 21:
             return "evening"
         else:
             return "uhhh something went wrong, time to debug lol"
